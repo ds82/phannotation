@@ -27,6 +27,10 @@ class PhannotationMethod {
 		$this->method = $method;
 
 		$doc = $this->method->getDocComment();
+
+		//print_r($this->method->getParameters());
+
+
 		$matches = array();
 		preg_match_all('/@([a-zA-Z]+)(?:\((.*)\))?/', $doc, $matches);
 

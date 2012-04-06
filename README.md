@@ -1,6 +1,7 @@
 # Phannotation #
 
-An annotation library for PHP
+An annotation library for PHP.
+For an example how to use the library look at the phpunit-test in test/phannotation/PhannotationTest.php.
 
 # Features #
 
@@ -42,4 +43,4 @@ Phannotation currently supports four kinds of annotations:
 /**
  * @complex({"key1":"value1","key2":"value2"})
  */
-``
+```
