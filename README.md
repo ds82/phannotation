@@ -1,7 +1,7 @@
 # Phannotation #
 
 An annotation library for PHP.
-For an example how to use the library look at the phpunit-test in test/phannotation/PhannotationTest.php.
+For an example how to use the library look at the phpunit-test [PhannotationTest.php](https://github.com/ds82/phannotation/blob/master/test/phannotation/PhannotationTest.php).
 
 # Features #
 
