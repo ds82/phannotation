@@ -25,7 +25,8 @@ class Phannotation {
 	private $clazz;
 
 	public function __construct($clazz) {
-		$this->clazz = new ReflectionClass($clazz);
+		if (ia_a($clazz, 'ReflectionClass')) $this->clazz = $clazz;
+		else $this->clazz = new ReflectionClass($clazz);
 	}
 
 	public function method($method) {
