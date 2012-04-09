@@ -25,12 +25,16 @@ class Phannotation {
 	private $clazz;
 
 	public function __construct($clazz) {
-		if (ia_a($clazz, 'ReflectionClass')) $this->clazz = $clazz;
+		if (is_a($clazz, 'ReflectionClass')) $this->clazz = $clazz;
 		else $this->clazz = new ReflectionClass($clazz);
 	}
 
 	public function method($method) {
 		return new PhannotationMethod($this->clazz->getMethod($method));
+	}
+
+	public function constructor() {
+		return new PhannotationMethod($this->clazz->getConstructor());
 	}
 
 

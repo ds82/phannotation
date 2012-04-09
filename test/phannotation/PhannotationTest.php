@@ -15,6 +15,11 @@ class PhannotationTest extends \PHPUnit_Framework_TestCase {
 		$this->assertEquals('method1', $uut->method('method1')->name());
 	}
 
+	public function testGetConstructor() {
+		$uut = new Phannotation('examples\SomeClass');
+		$this->assertEquals('__construct', $uut->constructor()->name());
+	}
+
 	public function testAnnoationWhenSimpleString() {
 
 		$uut = new Phannotation('examples\SomeClass');
