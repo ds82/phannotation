@@ -7,6 +7,14 @@ namespace examples;
 class SomeClass {
 
 	/**
+	 * @DefaultValue1("value1")
+	 * @DefaultValue2("value2")
+	 */
+	public function __construct($value1 = null, $value2 = null) {
+
+	}
+
+	/**
 	 * @single("value")
 	 * @array(["v1","v2"])
 	 * @multiple({"int":1,"string":"foo"})
@@ -21,7 +29,7 @@ class SomeClass {
 	 * @SomeOtherString("parameter2")
 	 */
 	public function method2($parameter1, $parameter2) {
-		
+
 	}
 
 }
